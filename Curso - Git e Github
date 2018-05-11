@@ -1,0 +1,9 @@
+----------------------------------------- Git e Github para iniciantes -----------------------------------------
+
+Git: sistema de controle de versão (!= de github)
+
+Para inicializar um repositório e enxergar as mudanças dentro do projeto: git init
+
+git status : serve para reportar como está meu repositório no momento
+git add "nome do arquivo a ser commitado" : prepara o arquivo para dar o commit (atualiza o arquivo)
+git commit -m "add Curso - Git e ..." : dá o commit e exibe a mensagem -m 
