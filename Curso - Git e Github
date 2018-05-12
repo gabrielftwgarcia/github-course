@@ -6,4 +6,19 @@ Para inicializar um repositório e enxergar as mudanças dentro do projeto: git 
 
 git status : serve para reportar como está meu repositório no momento
 git add "nome do arquivo a ser commitado" : prepara o arquivo para dar o commit (atualiza o arquivo)
-git commit -m "add Curso - Git e ..." : dá o commit e exibe a mensagem -m 
+git commit -m "add Curso - Git e ..." : dá o commit e exibe a mensagem -m (é obrigatório fazer add antes do commit!!)
+git commit -am "mensagem" : dá o commit e o add ao mesmo tempo e exibe a mensagem 
+
+**Se depois do commit eu der um git status, verei que aparecerá uma mensagem dizendo que não há nada para ser feito, pois tudo o que precisava ser "salvo" foi salvo 
+
+git log : mostra o que foi feito (há a possibilidade de aplicar diferentes filtros nessa busca)
+git shortlog: mostra de forma resumida o que foi feito (o autor e o que ele fez de commit)
+git diff : mostra em detalhes o que foi feito (linha por linha, útil para dar aquela revisada antes do commit)
+git show (id do commit) : mostra o que foi alterado no commit de id específico
+
+git checkout "nome do arquivo" : retorna o arquivo para o estado antes da edição
+git reset HEAD "nome do arquivo" : retorna o estado do arquivo depois que este foi adicionado (add) à lista pronta para commit
+git reset (--soft || --mixed || --hard) "hash do commit que quero usar como referencia para manter os commits que importam [a partir dele é o que continua], usar git log para saber qual a situação!"
+
+git remote add origin https://github.com/gabrielftwgarcia/github-course.git : liga meu repositório remoto ao github
+git push -u origin master : faz o envio para o repositório remoto do github (vai do repositório local para o repositório do Github)
