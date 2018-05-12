@@ -22,3 +22,7 @@ git reset (--soft || --mixed || --hard) "hash do commit que quero usar como refe
 
 git remote add origin https://github.com/gabrielftwgarcia/github-course.git : liga meu repositório remoto ao github
 git push -u origin master : faz o envio para o repositório remoto do github (vai do repositório local para o repositório do Github)
+
+origin é o repositório padrão criado pelo github, e master é o branch
+
+
